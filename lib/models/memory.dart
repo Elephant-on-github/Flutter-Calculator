@@ -14,7 +14,7 @@ class Memory {
       return;
     }
 
-    if (command == 'AC') {
+    if (command == 'Clear') {
       _allClear();
     } else if (operations.contains(command)) {
       _setOperation(command);

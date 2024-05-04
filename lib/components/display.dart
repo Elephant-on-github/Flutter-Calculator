@@ -21,7 +21,7 @@ class Display extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(10.0),
               child: AutoSizeText(
                 text,
                 minFontSize: 20,

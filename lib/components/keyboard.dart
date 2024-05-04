@@ -20,7 +20,7 @@ class Keyboard extends StatelessWidget {
           ButtonRow(
             buttons: [
               Button.large(
-                text: 'AC',
+                text: 'Clear',
                 color: Button.darkButtonColor,
                 onPressed: onPressed,
               ),
