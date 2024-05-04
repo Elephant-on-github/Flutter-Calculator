@@ -25,7 +25,7 @@ class Keyboard extends StatelessWidget {
                 onPressed: onPressed,
               ),
               Button(
-                text: '%',
+                text: 'Mod',
                 color: Button.darkButtonColor,
                 onPressed: onPressed,
               ),

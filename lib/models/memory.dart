@@ -1,5 +1,5 @@
 class Memory {
-  static const operations = ['%', '/', 'x', '-', '+', '='];
+  static const operations = ['Mod', '/', 'x', '-', '+', '='];
 
   final _buffer = [0.0, 0.0];
   int _bufferIndex = 0;
@@ -73,7 +73,7 @@ class Memory {
 
   _calculate() {
     switch (_operation) {
-      case '%':
+      case 'Mod':
         return _buffer[0] % _buffer[1];
       case '/':
         return _buffer[0] / _buffer[1];
