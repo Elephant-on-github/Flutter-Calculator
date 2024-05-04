@@ -25,7 +25,7 @@ class Keyboard extends StatelessWidget {
                 onPressed: onPressed,
               ),
               Button(
-                text: 'Mod',
+                text: 'Modulo',
                 color: Button.darkButtonColor,
                 onPressed: onPressed,
               ),
@@ -54,6 +54,10 @@ class Keyboard extends StatelessWidget {
                 text: 'x',
                 onPressed: onPressed,
               ),
+              Button.operation(
+                text: '^',
+                onPressed: onPressed,
+              ),
             ],
           ),
           const SizedBox(height: 1),
@@ -75,6 +79,10 @@ class Keyboard extends StatelessWidget {
                 text: '-',
                 onPressed: onPressed,
               ),
+              Button.operation(
+                text: 'bl',
+                onPressed: onPressed,
+              ),
             ],
           ),
           const SizedBox(height: 1),
@@ -94,6 +102,10 @@ class Keyboard extends StatelessWidget {
               ),
               Button.operation(
                 text: '+',
+                onPressed: onPressed,
+              ),
+              Button.operation(
+                text: 'bl',
                 onPressed: onPressed,
               ),
             ],

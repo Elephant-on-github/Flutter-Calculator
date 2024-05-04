@@ -37,7 +37,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: isBig ? 2 : 1,
+      flex: isBig ? 3 : 1,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: color,

@@ -1,5 +1,7 @@
+import 'dart:math';
+
 class Memory {
-  static const operations = ['Mod', '/', 'x', '-', '+', '='];
+  static const operations = ['Modulo', '/', 'x', '-', '+', '=', '^'];
 
   final _buffer = [0.0, 0.0];
   int _bufferIndex = 0;
@@ -73,7 +75,7 @@ class Memory {
 
   _calculate() {
     switch (_operation) {
-      case 'Mod':
+      case 'Modulo':
         return _buffer[0] % _buffer[1];
       case '/':
         return _buffer[0] / _buffer[1];
@@ -83,6 +85,8 @@ class Memory {
         return _buffer[0] - _buffer[1];
       case '+':
         return _buffer[0] + _buffer[1];
+      case '^':
+        return pow(_buffer[0], _buffer[1]);
       default:
         return _buffer[0];
     }
