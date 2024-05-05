@@ -24,9 +24,8 @@ class Keyboard extends StatelessWidget {
                 color: Button.darkButtonColor,
                 onPressed: onPressed,
               ),
-              Button(
+              Button.operation(
                 text: 'Modulo',
-                color: Button.darkButtonColor,
                 onPressed: onPressed,
               ),
               Button.operation(
